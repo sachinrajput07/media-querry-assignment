@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>footer</title>
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            position: relative;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .footer {
+            width: 100%;
+            max-height: 60vh;
+            background-color: #121212;
+            position: fixed;
+            bottom: 0px;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+
+        .container {
+            width: 96%;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 2fr;
+            align-content: stretch;
+            grid-column-gap: 30px;
+            margin: auto;
+            padding: auto;
+            
+        }
+        button{
+            background-color: #4e7cfa;
+            color: white;
+        
+        }
+
+        .link {
+            display: block;
+            text-decoration: none;
+            color: #bab5b5;
+            padding: 15px 0px;
+        }
+        .link:hover{
+            color: #2079fd;
+        }
+        footer * {
+        box-sizing:border-box;
+        outline:none;
+        border: none;
+      }
+
+        .section1 {
+            margin: 50px 30px;
+        }
+
+        .section2 {
+            margin: 50px 30px;
+        }
+
+        .section3 {
+            margin: 50px 30px;
+        }
+
+        .section4 {
+            
+            margin: 50px 30px;
+            
+        }
+
+        p {
+            line-height: 2;
+            color: #bab5b5;
+        }
+
+        h2 {
+            padding: 15px 0px;
+        }
+        button,input{
+            width: 90%;
+            padding: 18px;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+        @media  screen and (max-width:850px) {
+            .footer{
+                display: flex;
+                flex-direction: column  ;
+                justify-content: center;
+                max-height: 100vh;
+            }
+
+            .container{
+                width: 90%;
+                grid-template-columns: 1fr;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                padding-top: 0px;
+                padding-bottom:0px ;
+                
+            }
+            .section1{
+                margin:0px 30px;
+                margin-top: 90px;
+            }
+            .section2{
+                margin: 0px 30px;
+                margin-top: 15px;
+            }
+            .section3{
+                margin: 0px 30px;
+                margin-top: 0px; 
+            }
+            .section4{
+                margin: 0px 30px;
+                margin-top: 0px; 
+            }
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    <footer class="footer">
+        <div class="container">
+
+            <div class="section1">
+                <h2>One Card</h2>
+                <p>India's best metal credit card. Built with full-stack tech. Backed
+                    by the principles of simplicity, transparency, and giving back
+                    control to the user.</p>
+            </div>
+            <div class="section2">
+                <h2>Navigation</h2>
+                <a href="home" class="link">Home</a>
+                <a href="aboutus" class="link">About Us</a>
+                <a href="careers" class="link">Careers</a>
+                <a href="offers" class="link">Offers</a>
+            </div>
+            <div class="section3">
+                <h2>Support</h2>
+                <a href="faq" class="link">F.A.Q</a>
+                <a href="cookies" class="link">Cookies Policy</a>
+                <a href="terms" class="link">Terms Of Service</a>
+                <a href="support" class="link">Support</a>
+            </div>
+            <div class="section4">
+                <h2 class="hh2">Newsletter</h2>
+                <div>
+                    <input type="text" placeholder="Your email id here"/>
+                    <button>Subscribe</button>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Card</title>
+    <style>
+      *{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding: 0px;
+      }
+      /*nav start*/
+      .container{
+        max-width: 2000px;
+        width: 100%;
+      }
+      nav{
+        width: 100%;
+        height: 50px;
+        background-color: #1d1c1c;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .logo{
+        display: flex;
+        justify-content: space-between;
+      }
+      .link{
+        text-decoration: none;
+        color: white;
+        
+        margin-right: 25px;
+      }
+      .link:hover{
+         color: #598ed4fb;
+         scale: 1.1;
+      }
+      .logos{
+        margin-left: 30px;
+      }
+      .logo{
+        width: 50px;
+      }
+      svg{
+        display: none;
+      }
+      .button1{
+        margin-right: 20px;
+        padding: 7px 35px;
+        border: none;
+        border-radius: 5px;
+        background-color: #389efd;
+        font-weight: 600;
+        color: white;
+      }
+      .button1:hover{
+        scale: 1.1;
+        cursor: pointer;
+      }
+
+      main{
+        width: 100%;
+        overflow-y: hidden;
+        display: flex;
+        align-items: center;
+      }
+      .section1{
+        margin-left: 6%;
+        margin-top: 2%;
+      }
+      .onecard{
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+      }
+      .heading{
+        width: 55%;
+        padding-bottom: 20px;
+      }
+      .headingone{
+        font-size: 30px;
+        padding: 0px;
+        margin: 0px;
+      }
+      .heading2{
+        font-size: 60px;
+        padding: 0px;
+        margin: 0px;
+        padding-bottom: 20px;
+        color: #2796ff;
+      }
+      .heading3{
+        font-size: 18px;
+        color: #2c97fc;
+      }
+      p{
+        margin-right: 60px;
+        
+      }
+      @media screen and (max-width:800px) {
+        svg{
+          display: flex;
+        }
+        .button1{
+          display: none;
+        }
+        .link{
+          display: none;
+        }
+        .logo{
+          width: 30px;
+        }
+        .main{
+          display: flex;
+          flex-direction: column;
+      }
+      .section1{
+        margin-left: 10px;
+      }
+      .onecard{
+        width: 90%;
+      }
+      }
+     
+
+    </style>
+</head>
+<body>
+  <div class="container">
+    <nav>
+        <div class="logos">
+            <img src="https://cdn.logo.com/hotlink-ok/logo-social-sq.png" alt="Logo" class="logo">
+          </div>
+        <div class="anchors">
+            <a href="home" class="link">Home</a>
+            <a href="blog" class="link">Blog</a>
+            <a href="about" class="link">About</a>
+            <a href="contect" class="link">Contact</a>
+        </div>
+        <div class="button">
+            <button class="button1">Login</button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="50px" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16" style="margin-right:20px; color:white;">
+              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+            
+        </div>
+       
+    </nav>
+    <main class="main">
+            <div class="section1">
+                <div class="headingsection">
+                  <h3 class="headingone">Say Hi To</h3>
+                  <h1 class="heading2">One Card</h1>
+                  <h4 class="heading3">Co-branded Card Issuers:</h4>
+                </div>
+                <div class="headingsection2">
+                <img src="https://www.getonecard.app/images/legal/Banking_partners_24thJan_dark__.png" alt="sponsor-images" class="heading">
+                <p>India's best metal credit card. Built with full-stack tech. Backed by
+                  the principles of simplicity, transparency, and giving back control to
+                  the user.</p>
+            </div>
+            </div>
+                <video src="WhatsApp Video 2023-11-02 at 01.37.32_05891054.mp4" 
+                loop
+                autoplay="true"
+                controls
+                class="onecard" 
+                ></video>
+          
+    </main>
+  </div>
+</body>
+</html>

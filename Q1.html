@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav</title>
+    <style>
+      nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #242b2e;
+        font-family: sans-serif;
+      }
+      img{
+        width: 50px;
+        padding: 5px;
+        margin-left: 50px;
+        
+      }
+      a{
+        text-decoration: none;
+        color: white;
+        padding:10px 15px;
+      }
+      i{
+        display: none;
+      }
+      button{
+        margin-right: 80px;
+        padding: 8px 40px;
+        border: none;
+        border-radius: 5px;
+        background-color: #0072e1;
+        color: white;
+        font-weight: 700;
+      }
+      button:hover{
+        scale: 1.1;
+        cursor: pointer;
+      }
+      a:hover{
+        color:#76b5d3;
+        font-weight: bold;
+        scale: 1.1;
+      }
+      svg{
+        display: none;
+      }
+      @media screen  and (max-width:800px) {
+        img{
+          width: 30px;
+          margin-left: 10px;
+          padding: 13px 5px;
+        }
+        a{
+          display: none;
+        }
+        button{
+          display: none;
+        }
+        svg{
+          display: flex;
+        }
+       
+        
+      }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="https://cdn.logo.com/hotlink-ok/logo-social-sq.png" alt="Logo">
+        </div>
+        <div class="anchors">
+            <a href="home">Home</a>
+            <a href="blog">Blog</a>
+            <a href="about">About</a>
+            <a href="contect">Contact</a>
+        </div>
+        <div class="login">
+            <button>Login</button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="50px" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16" style="margin-right:20px; color:white;">
+              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </div>
+    </nav>
+</body>
+</html>

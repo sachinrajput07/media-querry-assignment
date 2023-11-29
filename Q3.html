@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneCard</title>
+    <style>
+        .container {
+            width: 100%;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+
+
+        /* nav start */
+        nav {
+            width: 100%;
+            height: 50px;
+            display: flex;
+            margin: auto;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1d1c1c;
+        }
+
+        .logo {
+            width: 60px;
+        }
+
+        .logos {
+            margin-left: 30px;
+        }
+
+        .link {
+            text-decoration: none;
+            color: #ffff;
+            margin-right: 25px;
+        }
+
+        .link:hover {
+            scale: 1.1;
+            color: #00aaff;
+        }
+
+        svg {
+            display: none;
+        }
+
+        
+    .buttons{
+        margin-right: 20px;
+        padding: 7px 35px;
+        border: none;
+        border-radius: 5px;
+        background-color: #389efd;
+        font-weight: 600;
+        color: white;
+      }
+      .buttons:hover{
+        scale: 1.1;
+        cursor: pointer;
+      }
+
+      /* nav End */
+      main{
+        width: 100%;
+      }
+      .section1{
+        display: flex;
+        align-items: center;
+        margin: auto;
+      } 
+      .headingsection1{
+        margin-left: 6%;
+        margin-top: 2%;
+      }
+      .heading{
+        width: 55%;
+        padding-bottom: 20px;
+      }
+      .onecard{
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+      }
+      .headingone{
+        font-size: 30px;
+        padding: 0px;
+        margin: 0px;
+      }
+      .heading2{
+        font-size: 60px;
+        padding: 0px;
+        margin: 0px;
+        padding-bottom: 20px;
+        color: #2796ff;
+      }
+      .heading3{
+        font-size: 18px;
+        color: #2c97fc;
+      }
+      p{
+        margin-right: 60px;
+      }
+      /* section two */
+      .section2{
+        width: 100%;
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 100px 0px;
+        
+      }
+      .section2 h1{
+        font-size: 50px;
+        color: #5555f5;
+        text-align: center;
+        
+        
+      }
+      .section2 p{
+        font-size: 40px;
+        margin: 10px 0px;
+        text-align: center;
+        
+      }
+      @media screen and (max-width:800px) {
+        svg{
+          display: flex;
+        }
+        .buttons{
+          display: none;
+        }
+        .link{
+          display: none;
+        }
+        .logo{
+          width: 30px;
+        }
+        .section1{
+          display: flex;
+          flex-direction: column;
+      }
+      .headingsection1{
+        margin-left: 10px;
+      }
+      .onecard{
+        width: 90%;
+      }
+      .section2{
+        background-color: white;
+        color: black;
+      }
+      .section2 h1{
+        font-size: 30px;
+      }
+      .section2 p{
+        font-size: 20px;
+        margin: 5px 0px;
+      }
+
+      }
+     
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="logos">
+                <img src="https://cdn.logo.com/hotlink-ok/logo-social-sq.png" alt="Logo" class="logo">
+            </div>
+            <div class="anchors">
+                <a href="home" class="link">Home</a>
+                <a href="blog" class="link">Blog</a>
+                <a href="about" class="link">About</a>
+                <a href="contect" class="link">Contact</a>
+            </div>
+            <div class="button">
+                <button class="buttons">Login</button>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="50px" fill="currentColor"
+                    class="bi bi-list" viewBox="0 0 16 16" style="margin-right:20px; color:white;">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </div>
+        </nav>
+        <main>
+            <section class="section1">
+                <div class="headingsection1">
+                    <div class="heading">
+                        <h3 class="headingone">Say Hi To</h3>
+                        <h1 class="heading2">One Card</h1>
+                        <h4 class="heading3">Co-branded Card Issuers:</h4>
+                    </div>
+                    <div class="img">
+                        <img src="https://www.getonecard.app/images/legal/Banking_partners_24thJan_dark__.png"
+                            alt="sponsor-images" class="heading">
+                        <p>India's best metal credit card. Built with full-stack tech. Backed by
+                            the principles of simplicity, transparency, and giving back control to
+                            the user.</p>
+                    </div>
+                </div>
+                <video src="WhatsApp Video 2023-11-02 at 01.37.32_05891054.mp4" loop autoplay="true"
+                    class="onecard"></video>
+            </section>
+            <section class="section2">
+                    <h1 class="hfirst">No Hidden Fees Ever</h1>
+                    <p class="hsecond">
+                        No Joining Fees.
+                    </p>
+                    <p class="hsecond">No Annual Fees.</p>
+                    <p class="hsecond">No Rewards Redemption Fees.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
